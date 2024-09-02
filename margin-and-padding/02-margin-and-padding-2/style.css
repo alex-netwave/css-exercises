@@ -1,27 +1,59 @@
+html {
+  box-sizing: block-size;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   background: #eee;
   font-family: sans-serif;
 }
 
 .card {
-  width: 400px;
+  width: 800px;
   background: #fff;
   margin: 16px auto;
+  padding: 15px;
 }
 
 .title {
   background: #e3f4ff;
 }
 
+.title,
+.content,
+.button-container {
+  display: block;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 32px;
+}
+
+
 .content {
   background: #e3f4ff;
+  padding: 30px 15px;
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  padding: 15px 40px;
+  font-size: 26px;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: rgba(28, 66, 53, 0.5);
+  color: #fff;
 }
