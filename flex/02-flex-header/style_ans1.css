@@ -1,14 +1,14 @@
-.header {
+.header  {
   font-family: monospace;
   background: papayawhip;
+  font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 8px;
-
+  padding: 10px;
 }
 
 .logo {
+  flex: none;
   font-size: 48px;
   font-weight: 900;
   color: tomato;
@@ -16,14 +16,30 @@
   padding: 4px 32px;
 }
 
+.left-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  flex: 1;
   display: flex;
-  padding: 0px;
-  margin: 0px;
   gap: 15px;
+  padding: 0;
+  margin: 0;
+  justify-content: inherit;
 }
+
+
 
 a {
   font-size: 22px;
@@ -32,10 +48,3 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
-
-/* Changed answer after seeing solution, realized answer way too convoluted. 
-
-see style_ans1.css for original answer
-
-*/
-
